@@ -1,4 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: lightgray;
+  font-family: 'Permanent Marker', cursive;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  padding: 5%;
+}
+
+p, li {
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  
+}
+
+#page-header {
+  display: flex;
+}
+
+.site-title {
+  padding: 0 2%;
+  font-size: 20px;
+  color:white;
+  font-weight: bolder;
+  margin: auto 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  background-color: black;
+  opacity: .8;
+}
+ 
+nav ul {
+  display: flex;
+  padding-left: 2%;
+}
+
+hr {
+  border-top: 1px dotted black;
+}
+
+#nav-list li {
+  list-style: none;
+  padding: 0 15px;
+  margin: auto;
+}
+
+#nav-list li a {
+  color: lightgrey;
+}
+
+main {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.sidebar {
+  padding: 20px 20px;
+  background-color: darkgray;
+}
+
+.sidebar h2 {
+  padding-bottom: 20px;
+}
+
 .container {
   margin: 0 auto 0 auto;
-  max-width: 720px;
+}
+
+.post {
+  padding-left: 4%;
+}
+
+.title {
+  padding: 2% 0;
+}
+
+#body-list li {
+  list-style: circle;
+}
+
+#body-list {
+  margin-left: 15%
+}
+
+#page-footer {
+  position: relative;
+  margin-top: 3%;
+  align-items: center;
+  left: 16%;
+  bottom: -60px;
+}
+
+@media all and (max-width: 760px) {
+  #nav-list li a {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #nav-list li a {
+    font-size: 8px;
+  }
 }

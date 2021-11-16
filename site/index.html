@@ -11,6 +11,9 @@
 
       See: http://necolas.github.com/normalize.css/
     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/normalize.css" />
 
     <!-- Edit ./stylesheets/main.css to add styles to the page -->
@@ -21,30 +24,35 @@
   <body>
     <div class="container">
       <header id="page-header">
-        <a class="site-title" href="index.html">My Site</a>
-
         <nav>
-          <ul>
+          <a class="site-title" href="#">My Site</a>
+
+          <ul id="nav-list">
             <li>
-              <a href="#">Gallery</a>
+              <a href="#introduction">Introduction</a>
             </li>
             <li>
-              <a href="#">Cool Page</a>
+              <a href="#some-new-section">Some New Section</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#another-section">Another Section</a>
+            </li>
+            <li>
+              <a href="#a-really-amazing-conclusion">A Really Amazing Conclusion</a>
             </li>
           </ul>
         </nav>
       </header>
-
-      <aside class="sidebar">
-        <h2>About</h2>
-        <p>Hello, my name is ____! Follow me at ...</p>
-        <p>Maybe add some interesting things here?</p>
-      </aside>
-
+      <hr>
       <main>
+
+        <aside class="sidebar">
+          <h2>About</h2>
+          <p>Hello, my name is Nate! Follow me at ...</p>
+          <br>
+          <p>Maybe add some interesting things here?</p>
+        </aside>
+
         <article class="post">
           <header class="post-header">
             <h1>The Best Article Ever</h1>
@@ -53,8 +61,8 @@
               <span class="post-author">Cool Author</span>
             </p>
           </header>
-          <section>
-            <h2>Introduction</h2>
+          <section id="introduction">
+            <h2 class="title">Introduction</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -62,6 +70,7 @@
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem.
             </p>
+            <br>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -71,8 +80,8 @@
             </p>
           </section>
 
-          <section>
-            <h2>Some New Section</h2>
+          <section id="some-new-section">
+            <h2 class="title">Some New Section</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -80,6 +89,7 @@
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem.
             </p>
+            <br>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -87,6 +97,7 @@
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem.
             </p>
+            <br>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -95,8 +106,8 @@
               sem.
             </p>
           </section>
-          <section>
-            <h2>Another Section</h2>
+          <section id="another-section">
+            <h2 class="title">Another Section</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -104,11 +115,35 @@
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem.
             </p>
-            <ul>
+            <br>
+            <ul id="body-list">
               <li>Lorem ipsum dolor sit amet consectetuer.</li>
               <li>Aenean commodo ligula eget dolor.</li>
               <li>Aenean massa cum sociis natoque penatibus.</li>
             </ul>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem.
+            </p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Assumenda repudiandae harum iure asperiores accusantium 
+              quidem ratione dolor placeat iusto unde facere optio laudantium 
+              non possimus, obcaecati laborum? Aperiam, doloremque laborum!
+            </p>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem.
+            </p>
+            <br>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -117,8 +152,8 @@
               sem.
             </p>
           </section>
-          <section>
-            <h2>A Really Amazing Conclusion</h2>
+          <section id="a-really-amazing-conclusion">
+            <h2 class="title">A Really Amazing Conclusion</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
